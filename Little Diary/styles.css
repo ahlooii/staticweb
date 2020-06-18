@@ -1,0 +1,78 @@
+body {
+  background-color: white;
+  margin: ;
+  padding: ;
+}
+
+.top {
+  background-color: #005b80;
+  width: 95%;
+  position: fixed;
+  padding: 1px 10px 1px 10px;
+  z-index: 99;
+  border: 3px black solid;
+  border-radius: 20px;
+}
+
+.f-section {
+  background-color: #aa5b70;
+  width: 50%;
+  position:relative;
+  top: -55px;
+}
+
+.s-section {
+  background-color: #008a80;
+  width: 50%;
+  position: relative;
+  top: -75px;
+}
+
+.redpanda {
+  position: relative;
+  top: 210px;
+  left: 320px;
+}
+
+.l-section {
+  background-color: #9ca5a4;
+  color: black;
+  clear: both;
+  position: relative;
+  top: -80px;
+}
+
+.gif {
+  margin: 1px 1px;
+  position: relative;
+  top: -90px;
+}
+
+p {
+  font-family: 'Comfortaa', cursive;
+  text-align: justify;
+  font-size: 70%;
+}
+
+nav {
+ margin: 5px;
+ color: black;
+ list-style: none;
+ }
+
+div {
+  padding-left: 5px;
+}
+
+a {
+ text-decoration: none;
+}
+
+a:visited {
+ color: green;
+}
+
+a:hover {
+ text-decoration: underline;
+ text-decoration-style: ;
+}
