@@ -1,0 +1,268 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+#top-banner{
+  height: 300%;
+  width: 100%;
+  border: 2px black solid;
+}
+
+#banner-img{
+  border: 2px black solid;
+  height: 800px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#div-logo{
+  height: 8%;
+  width: 18%;
+  margin: 20px 0 0 115px;
+}
+
+.div-menu{
+  sbackground-color:pink;
+  height: 40px;
+  width: 560px;
+  float:right;
+  margin: 30px 3px 0 0;
+}
+
+.menu-bar{
+  height: 100%;
+  width: a120px;
+  sborder: 1px white solid;
+  sbackground-color:black;
+  float: left;
+  color: white;
+  font-size: 15#f-headline{
+
+}px;
+}
+
+.arrow-down {
+  margin-top: 12px;
+  margin-right: 20px;
+}
+
+
+.clear{
+  clear: both;
+}
+
+#about{
+  margin-right: 20px;
+  position: relative;
+  top: 13px;
+}
+
+.last-menu{
+  height: 100%;
+  width: 60px;
+  sborder: 1px white solid;
+  sbackground-color:black;
+  float: left;
+  color: white;
+  font-size: 15px;
+}
+
+.last-icon{
+  margin: 0px 0 0px 15px;
+  height: 20px;
+  float: left;
+}
+
+.caption{
+  vertical-align: bottom;
+  display: inline-block;
+  display: block;
+  font-size: 12px;
+
+}
+
+#cart{
+  margin-left: 7px;
+}
+
+#div-womenmen{
+  height:30px;
+  width:450px;
+  margin:630px 0 0 60px;
+
+}
+.shopmen{
+  height: 40px;
+  width: 200px;
+  margin-right: 15px;
+}
+
+#div-fship{
+  margin-left: 450px;
+  margin-top: 40px;
+  width: 400px;
+  background-color: ;
+}
+
+#free-shipping{
+  font-size: 22px;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+}
+
+hr {
+  width: 20%;
+  margin-top: 18px;
+  height: 1px;
+  background-color: black;
+}
+
+#hot-selling {
+  margin-top: 30px;
+  height: 500px;
+  width: 1280px;
+  sbackground-color: pink;
+
+}
+
+.sell-item{
+  height: 500px;
+  width: 300px;
+  margin: 0 10px 0 10px;
+  sbackground-color: lightblue;
+  float: left;
+}
+
+.item-desc{
+  margin:0px 0 0px 75px;
+  position: relative;
+  top: 5px;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: black;
+}
+
+.price-tag{
+  color: #FB4C43;
+  font-size: 10px;
+  font-weight: bold;
+  margin-left: 95px;
+  position: relative;
+  top: 7px;
+}
+
+.slashed-price{
+  color: #A5A5A5;
+  font-size: 10px;
+  text-decoration: line-through;
+  position: relative;
+  top: 7px;
+
+}
+
+#color-option{
+  height: 20px;
+  width: 210px;
+  sbackground-color: grey;
+  position: relative;
+  top: 20px;
+  margin-left: 35px;
+}
+
+.color-box{
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+  float:left;
+}
+
+#color1{
+  background-color: #0000FF;
+  margin-left: 20px;
+}
+
+#color2{
+  background-color: #D53D73;
+}
+
+#color3{
+  background-color: #000000;
+
+}
+
+#color4{
+  background-color: #800000;
+}
+
+#color5{
+  background-color: #808080;
+}
+
+#color6{
+  background-color: #FFFFFF;
+  border: 1px #D3D3D3 solid;
+}
+
+#div-f-headline{
+  margin: 0 auto;
+  height: 25px;
+  width: 250px;
+  font-size: 23px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-top: 30px;
+  sbackground-color: pink;
+}
+
+.div-features{
+  margin-top: 30px;
+  height: 350px;
+  width: 1280px;
+  sbackground-color: lightgreen;
+  margin-bottom: -30px;
+}
+
+#f-photo1{
+  float: left;
+}
+
+.f-photo2{
+    float: right;
+}
+
+.div-features h2{
+  font-size: 22px;
+  position: relative;
+  top: 40%;
+  left: 40px;
+}
+
+.div-features p{
+  position: relative;
+  top: 40%;
+  left: 40px;
+  color: #6A6A6A;
+  font-size:14px;
+  margin-right: 50px;
+  line-height: 25px;
+}
+
+.div-features sup{
+  font-size: 9px;
+  margin-left: 3px;
+}
+
+.left-aligned{
+  width: 620px;
+}
+
+iframe{
+  width: 1280px;
+  height: 650px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
