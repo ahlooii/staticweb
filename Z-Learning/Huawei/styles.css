@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container-login{
+  margin: auto;
+  height: 1.4rem;
+  width: 100vw;
+  background-color: #aaa;
+}
+
+.login-box{
+
+  float:right;
+  width: 8rem;
+  height: 100%;
+}
+
+
+.container-login > a {
+  color:#333;
+  font-size: 0.8rem;
+}
+
+.arrow{
+  height: 0.8rem;
+  position: relative;
+  top: 0.1rem;
+}
+
+.login-icon{
+  padding-top: 1vh;
+  height: 50%;
+  fill: currentcolor;
+
+}
+
+.last{
+  margin-right: -2rem;
+}
+
+nav{
+  width: 100vw;
+  height: 4.75rem;
+  border: 1px black solid;
+}
+
+.nav-align{
+  width: 93%;
+  height: 45%;
+  position: relative;
+  top: 1rem;
+  background: pink;
+  margin: auto;
+}
+
+.nav-logo{
+  width: 9rem;
+  height: 100%;
+}
+
+.nav-menu{
+  sborder: 1px black solid;
+  margin-left: 1rem;
+}
+
+.nav-1stchild{
+  margin-left: 5rem;
+}
+
+.nav-menu a{
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+.nav-menu a:hover{
+  font-weight: bold;
+  border-bottom: 3px #E50214 solid;
+  border
+}

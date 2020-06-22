@@ -5,15 +5,15 @@
 }
 
 #top-banner{
-  height: 300%;
-  width: 100%;
-  border: 2px black solid;
+  height: 50vh;
+  width: 100vw;
+  sborder: 2px black solid;
 }
 
 #banner-img{
-  border: 2px black solid;
-  height: 800px;
-  width: 100%;
+  sborder: 2px black solid;
+  background-size: cover;
+  width: auto;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -40,9 +40,7 @@
   sbackground-color:black;
   float: left;
   color: white;
-  font-size: 15#f-headline{
-
-}px;
+  font-size: 15#f-headline
 }
 
 .arrow-down {
