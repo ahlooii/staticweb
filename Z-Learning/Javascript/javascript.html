@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,400;0,600;0,700;0,900;1,200;1,400&display=swap" rel="stylesheet">
+    <title></title>
+
+  </head>
+  <body>
+      <header>
+          <div class="top-container">
+                <div class="gradient"></div>
+                <h1 id="title">Ching's Travel</h1>
+                <input type="search" name="" value="" placeholder="Search the blog">
+                <span id="slogan1">Explore Expose Experience</span>
+                <nav>
+                    <ul>
+                       <li><a href="#">Home</a></li>
+                       <li><a href="#">Travel</a></li>
+                       <li><a href="#">Experience</a></li>
+                       <li><a href="#">About</a></li>
+                       <li><a href="#">Contact</a></li>
+                    </ul>
+                    <button id="button">Click Me!</button>
+                    <button id="chg-para-button">Change P!</button>
+                </nav>
+                <p id="secondParagraph">Javascript is ...</p>
+
+                <p id="empty-para"></p>
+                <button id="empty-button">What am i doing?</button>
+                
+          </div>
+      </header>
+      
+      <script type="text/javascript">
+
+            // change h1 text
+            document.getElementById("button").onclick = function() {
+                document.getElementById("title").innerHTML = "HELLO Ching's Reader";
+                
+            }
+
+            // change paragraph text
+            document.getElementById("chg-para-button").onclick = function() {
+                document.getElementById("secondParagraph").innerHTML = "I think " + document.getElementById("secondParagraph").innerHTML + "damn awesome!"
+            }
+
+            // add text to empty paragraph
+            document.getElementById("empty-button").onclick = function() {
+                document.getElementById("empty-para").innerHTML = "SURPRISEEE!!";
+            }
+
+
+            document.getElementById("button").onclick = function() {
+                document.getElementById("slogan1").style.display = "none";
+            }
+      </script> 
+
+
+    </body>
+</html>

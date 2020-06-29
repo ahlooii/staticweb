@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,400;0,600;0,700;0,900;1,200;1,400&display=swap" rel="stylesheet">
+    <title></title>
+
+  </head>
+    <body>
+
+        <p>What is the Magic Word?</p>
+        <input type="text" placeholder="password" id="usr-pass">
+        <button id="sign-in">Sign In</button>
+        <br>
+
+        <h2>How many fingers am i holding up?</h2>
+        <input type="text" placeholder="take a guess!" id="usr-input">
+        <button id="submit-btn">Guess</button>
+        
+        <script type="text/javascript">
+
+            document.getElementById("sign-in").onclick = function() {
+                
+                var password = document.getElementById("usr-pass").value;
+
+                var magicword = "abracadabra";
+
+                if (password == magicword) {
+                    alert("sign in success!")
+                } else {
+                    alert("password is not correct!")
+                }
+            }
+
+            
+
+            document.getElementById("submit-btn").onclick = function(){
+
+                    var fingers = Math.floor(Math.random() * 6);
+                    var answer = document.getElementById("usr-input").value;
+
+                    if (answer == fingers) {
+                        alert("You are right!");
+                    } else {
+                        alert("The answer is " + fingers);
+                    }    
+
+            }
+
+           
+        </script> 
+
+
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,400;0,600;0,700;0,900;1,200;1,400&display=swap" rel="stylesheet">
+    <title></title>
+
+  </head>
+    <body>
+
+        <div id="tweetDiv"></div>
+     
+        <h2>How many fingers am i holding up?</h2>
+        <input type="text" placeholder="take a guess!" id="usr-input">
+        <button id="submit-btn">Guess</button>    
+
+            
+
+        <script>
+
+            var tweetString = "";
+
+            var tweets = ["Hi everyone!", "Good Coffee", "Goodnight dear <3", "Fuck Bush"];
+
+            var i = 0;
+
+            while (i < tweets.length) {
+
+                tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+
+                i++;
+            }
+
+            document.getElementById("tweetDiv").innerHTML = tweetString;
+
+            // This is Finger Guessing Game
+
+            
+
+            document.getElementById("submit-btn").onclick = function(){
+
+                var noOfguess = 1;
+
+                var usrinput = document.getElementById("usr-input").value;
+
+                var gotIt = false;
+
+                while (gotIt == false) {
+                    
+                    var fingers = Math.floor(Math.random() * 6);
+
+                    if (fingers == usrinput){
+                        gotIt = true;
+                        alert("Well Done!");
+                    } else {
+                        noOfguess++;
+                    }
+                }
+            }
+
+
+            
+            
+           
+        </script> 
+
+
+    </body>
+</html>

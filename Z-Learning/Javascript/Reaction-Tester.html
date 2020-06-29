@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agility Test</title>
+    <style type="text/css">
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            display: flex;
+            height: 3rem;
+            background : linear-gradient(124deg, darkcyan 10%,  #21618c);
+            color: white;
+            padding: 0.5rem;
+        }
+
+        .title {
+            font-size: 1.5rem;
+            padding: 0.5rem;
+        }
+
+        .record-container{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 20px;
+            sborder: 1px black solid;
+        }
+
+        .record-container > p {
+            sborder: 1px black solid;
+            font-size: 1.5rem;
+            margin: 0 auto;
+            height: 3rem;
+            padding: 1rem;
+            background: linear-gradient(248deg,  #a3e4d7 , #d6eaf8);
+            border-radius: 20px;
+        }
+
+
+        #shape {
+
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display:none;
+            position: relative;
+
+        }
+
+        .record{
+            font-weight: bold;
+        }
+    
+    </style>
+
+  </head>
+    <body>
+
+        <h1>How Fast Can You Click!</h1>
+
+        <p class="title">Click on the circle or box when it appear!</p>
+        
+        <div class="record-container">
+        
+            <p class="record">Your time: <span id="timetaken"></span></p>
+            
+            <p class="record">Average time: <span id="avg-timetaken"></span></p>
+
+            <p class="record">Highest record: <span id="fastest-time"></span></p>
+
+        </div>
+        <div id="shape"></div>
+
+        <script type="text/javascript">
+
+            var start = new Date().getTime();
+
+            var tries = 0;
+
+            var accumulateTime = 0;
+
+            var highRecord = 100;
+
+            function getRandomColor() {
+
+                var letters = '0123456789ABCDEF'.split('');
+
+                var color = '#'
+
+                for (var i = 0; i < 6; i++){
+                    color += letters[Math.floor(Math.random() * 16)]
+                }
+
+                return color;
+
+            }
+  
+            function makeShape(){
+
+                var top = Math.random() * 400;
+
+                var left = Math.random() * 400;
+
+                var width = (Math.random() * 300) + 100;
+
+                if (Math.random() > 0.5) {
+
+                    document.getElementById("shape").style.borderRadius = "50%";
+                } else {
+                    document.getElementById("shape").style.borderRadius = "0%";
+                    
+                }
+
+
+                document.getElementById("shape").style.backgroundColor = getRandomColor ();
+
+                document.getElementById("shape").style.height = width + "px";
+
+                document.getElementById("shape").style.width = width + "px";
+
+                document.getElementById("shape").style.left = left + "px";
+
+                document.getElementById("shape").style.top = top + "px";
+                
+                document.getElementById("shape").style.display="block";
+            
+                start = new Date().getTime();
+            }
+  
+            function appearAfterDelay() {
+                setTimeout(makeShape, Math.random() * 2000);
+            }
+            
+            appearAfterDelay();            
+
+            document.getElementById("shape").onclick = function() {
+                
+                document.getElementById("shape").style.display = "none";
+
+                var end = new Date().getTime();
+                
+                var timetaken = (end - start) / 1000;
+
+                tries++
+
+                accumulateTime = accumulateTime + timetaken
+
+                var average = accumulateTime / tries
+
+                if (timetaken < highRecord) {
+                    highRecord = timetaken
+                } 
+        
+
+                document.getElementById("fastest-time").innerHTML = highRecord.toFixed(2) + "s"
+
+                document.getElementById("timetaken").innerHTML = timetaken.toFixed(2) + "s";
+
+                document.getElementById("avg-timetaken").innerHTML = average.toFixed(2)  + "s";
+
+                appearAfterDelay();
+            }
+
+            
+            
+
+
+
+
+            
+            
+           
+        </script> 
+
+
+    </body>
+</html>
