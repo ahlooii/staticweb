@@ -31,6 +31,93 @@
             document.getElementById("tweetDiv").innerHTML = tweetString;
 
 
+
+
+
+            for (var i =0; i < 10; i++) {
+              console.log(i)
+            }
+
+
+            //for loops
+            var john = ['john', 'smith', 1990, 'designer', false]
+            for (var i=0; i < john.length; i++){
+              console.log(john[i])
+            }
+
+            //while loops  
+            var i = 0;
+            while ( i < john.length){
+              console.log(john[i])
+              i++;
+            }
+
+            //continue - it continue loops even not true
+            var john = ['john', 'smith', 1990, 'designer', false]
+            for (var i=0; i < john.length; i++){
+              if(typeof john[i] !== 'string') continue;
+              console.log(john[i])
+            }
+
+            //break - it stop loops when it's not true
+            for (var i=0; i < john.length; i++){
+              if(typeof john[i] !== 'string') break;
+              console.log(john[i])
+            }
+
+              //reverse for-loops
+            for (var i= john.length - 1; i >=0; i--){
+              console.log(john[i])
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
            
         </script> 
 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+  </head>
+    <body>
+
+        <script type="text/javascript">
+
+            var John, Mike, Marry, Nog, johnAvg, mikeAvg, marryAvg;
+            John=89+100+123;
+            Mike=89+100+121;
+            Marry=9711+134+105;
+            //number of game
+            Nog=3;
+            johnAvg=John/Nog;
+            mikeAvg=Mike/Nog;
+            marryAvg=Marry/Nog;
+
+            if (johnAvg > mikeAvg && johnAvg > marryAvg) {
+                console.log("John Is The Winner!");
+                console.log(marryAvg);
+            } else if (mikeAvg > johnAvg && mikeAvg > marryAvg) {
+                console.log("Mike is the Winner!");
+                console.log(mikeAvg);
+            } else if (marryAvg > johnAvg && marryAvg > mikeAvg){
+                console.log("Marry is the Winner!");
+                console.log("She scores" + marryAvg + "avg point");
+            } else {
+                console.log("It's a Draw!");
+                console.log(mikeAvg);
+                console.log(johnAvg);
+            }
+
+
+            
+
+           
+        </script> 
+
+
+    </body>
+</html>

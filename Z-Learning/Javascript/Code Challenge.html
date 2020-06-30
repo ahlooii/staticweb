@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+  </head>
+    <body>
+
+        <script type="text/javascript">
+        
+        
+
+        function tipsCalc(){
+            
+            var percentage;
+            var bill= [124,48,268,180,42];
+            var tips={};
+            var final={};
+            
+            for (var i=0; i<bill.length; i++ ){
+                if (bill[i] < 50){
+                        percentage = .2;
+                    } else if (bill[i] >= 50 && bill[i] < 200){
+                        percentage = .15;
+                    } else {
+                        percentage = .10;
+                    }
+                    return percentage * bill[i];
+                    }  
+                    
+                    
+                    
+                    var tips = [tipsCalc(bills[0]), tipsCalc(bills[1]), tipsCalc(bills[2])]
+                    var tips_total = [tips[0]+bills[0], tips[0]+bills[1], tips[2]+bills[2]]
+                    console.log(tips)
+                    console.log(tips_total)
+        }
+
+        
+
+
+
+
+           
+        </script> 
+
+
+    </body>
+</html>

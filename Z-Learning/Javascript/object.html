@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+  </head>
+    <body>
+
+     
+            
+
+            
+
+        <script>
+
+            var john = {
+                firstName: 'John',
+                lastName: 'Smith',
+                birthYear: 1990,
+                family: ['Jane', 'Mark', 'Bob', 'Emily'],
+                job: 'teacher',
+                isMarried: false
+            };
+
+            console.log(john.family);
+            console.log(john['isMarried']);
+            var x = 'birthYear';
+            console.log(john[x]);
+
+            john.job='lecturer';
+            john['isMarried']=true;
+
+            console.log(john)
+
+            //object method
+            var johny = {
+                firstName: 'Johny',
+                lastName: 'Smith',
+                birthYear: 1990,
+                family: ['Jane', 'Mark', 'Bob', 'Emily'],
+                job: 'teacher',
+                isMarried: false,
+                calcAge: function(birthYear){
+                    this.age = 2018 - this.birthYear;
+                }
+            };
+
+            johny.calcAge();
+            console.log(johny)
+
+
+
+
+            var Mark = {
+                name : 'Mark Zukerberg',
+                mass : 80,
+                height: 1.60,
+                calcbmi: function(){
+                    this.bmi = this.mass / (this.height * this.height);
+                }
+            }
+            
+            console.log(Mark)
+            
+
+            var Johnie = {
+                name : 'Johnie Zukerberg',
+                mass : 80,
+                height: 1.60,
+                calcbmi: function(){
+                    this.bmi = this.mass / (this.height * this.height);
+                }
+            }
+            ;
+            console.log(Johnie)
+
+            if (Johnie.calcbmi() > Mark.calcbmi()){
+                console.log(Johnie.name);
+                console.log(Johnie.bmi);
+            } else if (Johnie.bmi < Mark.bmi){
+                console.log(Mark.name);
+                console.log(Mark.bmi);
+            } else {
+                console.log("They are both the same!!")
+                console.log("Shares a bmi score of" + Johnie.bmi)
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script> 
+
+
+    </body>
+</html>
