@@ -94,3 +94,20 @@ li > a:hover{
   margin-left: 10%;
 }
 
+.socialMedia-container{
+
+}
+
+.social-logo{
+  height: 1rem;
+  filter: grayscale(1.0);
+  filter: invert(1.0);
+  filter: brightness(100);
+}
+
+.linkin-logo{
+  height: 3rem;
+  filter: brightness(100);
+  filter: blur(100);
+  
+}
