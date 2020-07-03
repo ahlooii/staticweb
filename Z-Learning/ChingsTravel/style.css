@@ -6,12 +6,21 @@
   font-family: 'Raleway', sans-serif;
 }
 
+body{
+  display: grid;
+  grid-template-columns: 30rem 1fr 1fr 30rem;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "h h h h"
+  "a a a a"
+  "b1 b1 b1 b1"
+  
 
-
-
+}
 
 header{
-  height: 70vh;
+  grid-area: h;
+  height: 26rem;
   width: 100vw;
 }
 
@@ -22,91 +31,58 @@ header{
   background-repeat: no-repeat;
   background-position: 50% 30%;
   background-size: cover;
+  width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 5fr 5fr 1fr;
-  grid-template-rows: 2fr 4fr 4fr;
-  grid-template-areas: "clear nav social clear"
-                       "clear title title clear"
-                       "clear ads   ads    clear";
-
- 
-  
+  grid-template-columns: 5rem 1fr 1fr 5rem;
+  grid-template-rows: 2rem auto;
+  grid-template-areas: 
+  ". navbar social ."
+  ". slogan slogan ."
+  ". btm-nav btm-nav .";
 }
 
-
-.gradient{
-  background: radial-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9));
-  height: 100%;
- 
-
-}
-
-h1{
-  color: white;
-  font-size: 2.5rem;
-  font-family: 'Playfair Display', serif;
-  word-spacing: 0.5em;
-  text-align: center;
-  margin-top: 2rem;
-  grid-column: 1/4;
-  grid-row: 2/3;
-  
-  
-}
-
-.nav {
-  height: 4vh;
-  grid-column: 2/3;
-  grid-row: 1/2;
-  margin-top: 0.3rem;
-  grid-area: nav;
- 
-  
+nav {
+  grid-area: navbar;
+  position: relative;
+  top: 0.3rem;
 }
 
 ul {
-  border: pink 2px solid;
   display: flex;
-  justify-content: end;
-  
+  justify-content: space-between;
+  align-content: flex-end;
+  height: 100%;
+
 }
 
 li {
   list-style: none;
-  height: 100%;
-  padding: 0 1.5rem;
+  align-self: center;
+
+
   
 }
 
 li > a {
   text-decoration: none;
   color: #fff;
-  font-size: 0.9rem;
-  font-weight:;
-  height: 1rem;
-  position: relative;
-  z-index: 100;
+  font-size: 0.7rem;
+  
 }
 
 li > a:hover{
   color: #eee;
 }
 
-
 .socialMedia-container{
-  width: 100%;
-  height: 4vh;
-  grid-column: 3/4;
-  grid-row: 1/2;
+  grid-area: social;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 0.3rem;
-
-
+  position: relative;
+  top: 0.3rem;
 }
-
 .social-logo{
   height: 0.7rem;
   filter: grayscale(1.0);
@@ -120,21 +96,42 @@ li > a:hover{
   filter: brightness(100);
   filter: blur(100);
   padding: 0 0.6rem;
+}
+
+
+
+h1{
+  grid-area: slogan;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  word-spacing: 0.5em;
+  text-align: center;
+  position: relative;
+  top: 40%;
   
+}
+
+.gradient{
+  background: radial-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9));
+  height: 100%;
+ 
+
 }
 
 .author{
+  grid-area: a;
   display: flex;
-  height: 18rem;
-  
+  height: 24rem;
+    
 }
 
 .author > img{
-  height: auto;
-  max-width: 15rem;
-  border-radius: 50%;
   flex:1;
-  margin: 3rem 0 1rem 0;
+  align-self: center;
+  height: 13rem;
+  max-width: 13rem;
+  border-radius: 50%;
+  margin: 2rem 5rem 3rem 10rem;
   
  
 }
@@ -142,14 +139,27 @@ li > a:hover{
 .author p{
   flex:1;
   font-size: 0.9rem;
-  margin: 3rem 0rem 1rem 0rem;
-  padding-right: 0rem;
+  justify-self: center;
+  align-self: center;
+  padding: 0 11rem 0 5rem;
   width: 18rem;
   line-height: 1.3rem;
 
 }
 
+section{
+  grid-area: b1;
+  display: grid;
+  grid-template-columns: 10rem 1fr 1fr 10rem;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "blg-h blg-h blg-h blg-h"
+  ". blg-list blg-list ."
+  ". x x .";
+}
+
 .blogpost1{
+  grid-area: blg-h;
   background-image: url(images/post1.jpg);
   background-repeat: no-repeat !important;
   background-position: center center;
@@ -158,15 +168,16 @@ li > a:hover{
   position: relative;
   z-index: -1;
   display: flex;
-  margin-top: 3rem;
-  height: 30rem;
+  justify-content: center;
+  align-items: center;
+  height: 36rem;
 }
 
 .text-container{
   flex: 1;
-  padding: 3rem 0 0 0rem;
   display: flex;
   flex-direction: column;
+  padding: 0 0rem 0 8rem;
   
 }
 
@@ -182,36 +193,40 @@ h2{
   line-height: 1.2rem;
   width: 80%;
   margin-top: .5rem;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .text-container button{
-  font-size: 0.9rem;
-  color:black;
-  margin-top: 2rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+  margin-top: 3rem;
   width: 70%;
-  letter-spacing: -0.0rem;
-  opacity: 50%;
-  border-radius: 6px;
+  height: 1.8rem;
+  border: none;
+  border-radius: 5px;
+  opacity: 90%;
 }
 
 .text-container button:hover{
   opacity: 80%;
 }
 
+
+
 .video-container{
   flex:2;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  height: 17rem;
+  width: 100%;
+  position: relative;
+  top: -1.5rem;
   
     
 }
 
 .video-container > iframe {
-  height: 60%;
-  width: 30rem;
+  height: 100%;
+  width: 75%;
   
   
 }
