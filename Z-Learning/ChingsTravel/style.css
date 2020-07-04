@@ -24,8 +24,6 @@ header{
   width: 100vw;
 }
 
-
-
 .top-container{
   background-image: url('images/background.jpg');
   background-repeat: no-repeat;
@@ -116,6 +114,9 @@ h1{
 }
 **/
 
+
+
+/**New Section**/
 .author{
   grid-area: a;
   display: flex;
@@ -132,6 +133,11 @@ h1{
   margin: 2rem 5rem 3rem 10rem;
   
  
+}
+
+.author > img:hover{
+  transform: scale(1.2);
+  transition: all 0.9s ease-in-out;
 }
 
 .author p{
@@ -156,12 +162,15 @@ section{
   ". x x .";
 }
 
+
+
+
+/**New Section**/
 .first-section{
   grid-area: blg-h;
   background-image: url(images/post1.jpg);
   background-repeat: no-repeat !important;
   background-position: center center;
-  background-size: ;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -226,6 +235,9 @@ h2{
   
 }
 
+
+
+/**New Section**/
 .second-section{
   grid-area: sSec;
   height: 24rem;
@@ -233,27 +245,62 @@ h2{
   flex-flow: column;
   align-items: center;
   position: relative;
-  top: 2.7rem;
+  top: 3.0rem;
 }
 
 .second-section h2{
   color: #555;
-  font-size: 1.3rem;
+  font-size: 1.0rem;
   font-weight: bold;
 }
 
 .posts-container{
   height: 70%;
-  width: 100%;
-  background-color: pink;
-  margin: auto;
+  width: 80%;
+  margin-top: 1.3rem;
   display: flex;
   justify-content: space-around;
+
 }
 
 .posts-container > div{
   height: 100%;
-  width: 28%;
-  background-color: black;
+  width: 32%;
+}
+
+.posts{
+  background-size: cover;
+}
+
+#post1{
+  background-image: url('images/latest-post/post1.jpg');
   
 }
+
+#post2{
+  background-image: url('images/latest-post/post2.jpg');
+}
+
+#post3{
+  background-image: url('images/latest-post/post3.jpg');
+}
+
+.gradient{
+  background: radial-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.3));  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gradient:hover{
+  transition: background 2s ease-in-out;
+  background: radial-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.9)); 
+}
+
+.post-desc{
+  color: #eee;
+  width: 60%;
+  font-weight: bold;
+}
+
+
