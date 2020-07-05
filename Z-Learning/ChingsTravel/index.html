@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,300;1,700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
+    <script src="../Javascript/jquery-3.5.1.min.js"></script>
     <title></title>
 
   </head>
@@ -28,7 +29,7 @@
             <img class="social-logo" src="images/Insta.svg" alt="">
             <img class="social-logo" src="images/Twitter.svg" alt="">
           </div>    
-          <h1>Ching's Travel Journal</h1>
+          <h1 class="fade-in">Ching's Travel Journal</h1>
         </div>
       </header>
       <div class="author">
@@ -47,38 +48,65 @@
               Innsbruck is a small city surrounded by magnificent mountains, the view within the city is just super perfect that i would say Innsbruck is my favorite city we’ve visited throughout the journey!
             </p>
             
-            <button> READ: AMAZING JOURNEY AT INNSBRUCK </button>  
+            <button class="read-btn"> READ: AMAZING JOURNEY AT INNSBRUCK </button>  
           </div>
           <div class="video-container">
               <iframe width="699" height="393" src="https://www.youtube.com/embed/BNcr4sRlGh0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
+
         <div class="second-section"> <!--Entire Row To Fit GRID-->
+          
           <h2>LATEST POSTS</h2>
+          
           <div class="posts-container"> <!--Width Restriction-->
-            <div id="post1" class="posts"> <!--Individual Post Container-->
-                <div class="gradient">
-                  <span class="post-desc">Over-tourism kills Hallstatt, is that true?</span>
-                </div>
+            
+            <div class=overflow>
+              <div id="post1" class="posts"> <!--Individual Post Container-->
+                  <div class="gradient">
+                    <span class="post-desc">Over-tourism kills Hallstatt, is that true?</span>
+                  </div>
+              </div>
             </div>
 
-            <div id="post2" class="posts"> 
-                <div class="gradient">
-                  <span class="post-desc">Explore Salzburg,the city of Mozart</span>
-                </div>
+            <div class=overflow>
+              <div id="post2" class="posts"> 
+                  <div class="gradient">
+                    <span class="post-desc">Explore Salzburg,the city of Mozart</span>
+                  </div>
+              </div>
             </div>
-
-            <div id="post3" class="posts">
-                <div class="gradient">
-                  <span class="post-desc">Why Amsterdam and why only Amsterdam?</span>
-                </div>
-            </div>
-
+            
+            <div class=overflow>
+              <div id="post3" class="posts">
+                  <div class="gradient">
+                    <span class="post-desc">Why Amsterdam and why only Amsterdam?</span>
+                  </div>
+              </div>
+            </div>  
           </div>
 
         </div>
         
+        <div class="third-section"> <!--display flex-->
+          <div class=text-container>
+            <h2>Salzburg,<br> the city of Mozart</h2>
+            <p>Dom Zu Salzburg or Salzburg Cathedral is the seventeenth-century Baroque cathedral of the Roman Catholic Archdiocese of Salzburg in the city of Salzburg. As you can see from the photos below, both the interior and exterior of the church are well-maintained, making it a stunning historical place to visit.</p>
+            
+            <button class="read-btn"> READ: AMAZING JOURNEY AT INNSBRUCK </button>  
+          </div>
+          <div class="video-container">
+              <iframe width="699" height="393" src="https://www.youtube.com/embed/hXRaZfgMNSs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
       </section>
+
+      <script type="text/javascript">
+
+
+      
+      </script>  
   </body>
 
   
