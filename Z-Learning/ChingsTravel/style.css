@@ -1,5 +1,10 @@
 /*font-family: 'Yellowtail', cursive;*/
 /*font-family: 'Titillium Web', sans-serif;*/
+html{
+  scroll-behavior: smooth;
+}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -14,6 +19,7 @@ body{
   "h h h h"
   "a a a a"
   "b1 b1 b1 b1"
+  "foot foot foot foot"
   
 
 }
@@ -288,7 +294,6 @@ h2{
   overflow: hidden;
   height: 20rem;
   width: 32%;
-  border: 1px black solid;
 }
 
 .posts{
@@ -334,7 +339,6 @@ h2{
   font-weight: bold;
 }
 
-
 .third-section{
   grid-area: tSec;
   background-image: url(images/post2.jpg);
@@ -346,3 +350,61 @@ h2{
   justify-content: center;
   align-items: center;
   height: 36rem;
+}
+
+footer {
+  grid-area: foot;
+  height: 8rem;
+  width: 100%;
+  margin-top: 5rem;
+  background-color: #332E2D;
+  color: #eee;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas: 
+  "foot1 foot2 foot3"
+
+  "f-content1 f-content2 f-content3";
+}
+
+footer h3 {
+  font-family: 'Playfair Display', serif;
+  margin: 1rem 0 0 8rem;
+}
+
+footer span{
+  font-size: 0.7rem;
+}
+
+.copyright{
+  grid-area: f-content1;
+  margin: 1rem 0 0 8.1rem;
+  font-size: 0.6rem;
+}
+
+footer h4{
+  grid-area: foot2;
+  margin: 1.2rem 0 0 8rem;
+}
+footer nav{
+  grid-area: f-content2;
+  margin: 0 0 0 4.4rem;
+}
+
+footer ul{
+  display: flex;
+  justify-content: flex-start;
+}
+
+footer li{
+  margin: 0 0.5rem 0 0;
+}
+
+#designer{
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin: 2rem 0 0 2rem;
+  color:#665F5F
+}
