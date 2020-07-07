@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>GETTING STARTED WITH BRACKETS</h1>
+
+    <h2>This Is Your Guide!</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis molestias, laborum architecto reprehenderit minus sequi a aliquam unde dicta facilis quasi earum ab eum perspiciatis qui saepe quam nam. Obcaecati?</p>
+
+    <script type="text/javascript">
+
+        //Object.create
+        var personProto= {
+            calculateAge: function(){
+                console.log(2016 - this.yearOfBirth);
+            }
+        };
+
+        var john = Object.create(personProto)
+        john.name = 'John';
+        john.yearOfBirth = 1990;
+        john.job = 'teacher';
+
+        var jane = Object.create(personProto, {
+            name: {value: 'Jane'},
+            yearOfBirth: {value: 1969},
+            job: {value: 'designer'}
+        });
+
+
+        
+    </script>
+</body>
+</html>

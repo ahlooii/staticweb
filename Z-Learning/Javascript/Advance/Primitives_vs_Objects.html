@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>GETTING STARTED WITH BRACKETS</h1>
+
+    <h2>This Is Your Guide!</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis molestias, laborum architecto reprehenderit minus sequi a aliquam unde dicta facilis quasi earum ab eum perspiciatis qui saepe quam nam. Obcaecati?</p>
+
+    <script type="text/javascript">
+
+        //Primitives Vs Objects
+        // Primitives = Null, numbers, string, undefined, booleans.
+        // Objects = every other things
+
+
+        //PRIMITIVES
+        var a = 23;
+        var b = a;
+        a = 46;
+        console.log(a);
+        console.log(b);
+
+
+        //OBJECTS
+        var obj1 = {
+            name: 'John',
+            age: 26
+        };
+
+        var obj2 = obj1;
+        obj1.age = 30;
+        console.log(obj1.age);
+        console.log(obj2.age);
+
+        //FUNCTIONS
+        var age = 27;
+        var obj = {
+            name: 'Jonas',
+            city: 'Lisbon'
+        };
+
+        function change (a, b){
+            a = 30;
+            b.city = 'San Francisco';
+        }
+
+        change(age, obj);
+
+        console.log(age);
+        console.log(obj.city);
+        
+    </script>
+</body>
+</html>
