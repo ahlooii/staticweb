@@ -19,7 +19,7 @@
     function arrayCalc(arr, fn){
         var arrRes = []; //Array of Result
         for (var i = 0; i < arr.length; i++){ 
-            arrRes.push(fn(arr[i]));
+            arrRes.push(fn(arr[i]));    // calcAge(arr[i]) - What it does is that it will wrap the array[i] item on that particular loops into different function or "(fn)" you passed to it in later's variable and then it push that result into arrRes. 
         }
         return arrRes;
     }
@@ -30,7 +30,32 @@
 
     var ages = arrayCalc(years, calcAge);
     console.log(ages)
-        
+
+    // CALCULATE WHETHER IS IT FULL AGE
+    function isFullAge(el) {
+        return el >= 18;
+    }
+
+    var fullAges = arrayCalc(ages, isFullAge);
+
+    console.log(fullAges)
+    
+    // MAX HEART RATE
+    function maxHeartRate(el) {
+        if (el >= 18 && el <= 81){
+    
+        return Math.round(206.9 - (0.67 * el));
+        } else {
+        return -1;
+        }
+    
+    }
+
+    var rates = arrayCalc(ages, maxHeartRate)
+    console.log(rates)
+
+
+
     </script>
 </body>
 </html>

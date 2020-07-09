@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>GETTING STARTED WITH BRACKETS</h1>
+
+    <h2>This Is Your Guide!</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis molestias, laborum architecto reprehenderit minus sequi a aliquam unde dicta facilis quasi earum ab eum perspiciatis qui saepe quam nam. Obcaecati?</p>
+
+    <script type="text/javascript">
+
+    function retirement(retirementAge) {
+        var a = ' years left until retirement.'
+        return function (yearOfBirth) {
+            var age = 2016 - yearOfBirth;
+            console.log((retirementAge - age) + a)
+        }
+    }
+    
+    var retirementUS = retirement(66);
+    retirementUS(1994)
+
+    retirement(65)(1994)
+
+
+
+
+
+    function interviewQuestion(job){
+        return function(name){
+            if (job === 'designer') {
+                console.log(name + ', can you please explain what UX design is?')
+                
+            } else if (job === 'teacher'){
+                console.log(name + ', what subject do you teach?')
+                
+            } else {
+                return function(name){
+                    console.log(name + ', Hello, what do you do?')
+                }
+            }
+        }
+    }
+
+    interviewQuestion('teacher')('mark')
+
+   
+
+    </script>
+</body>
+</html>

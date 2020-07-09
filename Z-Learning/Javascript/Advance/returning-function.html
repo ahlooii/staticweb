@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>GETTING STARTED WITH BRACKETS</h1>
+
+    <h2>This Is Your Guide!</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis molestias, laborum architecto reprehenderit minus sequi a aliquam unde dicta facilis quasi earum ab eum perspiciatis qui saepe quam nam. Obcaecati?</p>
+
+    <script type="text/javascript">
+
+    function interviewQuestion(job){
+        if (job === 'designer') {
+            return function(name){
+                console.log(name + ', can you please explain what UX design is?')
+            }
+        } else if (job === 'teacher'){
+            return function(name){
+                console.log(name + ', what subject do you teach?')
+            }
+        } else {
+            return function(name){
+                console.log(name + ', Hello, what do you do?')
+            }
+        }
+    }
+
+    var teacherQuestion = interviewQuestion('teacher')
+    var designerQuestion = interviewQuestion('designer')
+
+    designerQuestion('Julia')    
+    teacherQuestion('James')
+
+    function yearOfSuccess(when){
+        if (when === 'now'){
+            return function(name){
+                console.log(name + ' you will success pretty soon but be prepare to fall!')
+            }
+        } else if (when === 'later'){
+            return function(name){
+                console.log(name + ' you might feel comfortable now but you will regret later.')
+            }
+        } else {
+            return function(name){
+                console.log('If you cant even make your mind up on this one, you will pretty much sucks on your life, dear ' + name)
+            }
+        }
+    }
+
+    var myself = yearOfSuccess('dont know');
+    console.log(myself('mark'))
+
+    </script>
+</body>
+</html>

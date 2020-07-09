@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>GETTING STARTED WITH BRACKETS</h1>
+
+    <h2>This Is Your Guide!</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis molestias, laborum architecto reprehenderit minus sequi a aliquam unde dicta facilis quasi earum ab eum perspiciatis qui saepe quam nam. Obcaecati?</p>
+
+    <script type="text/javascript">
+    
+    var years = [1990, 1965, 1937, 2005, 1998]
+
+    function arrayCalc(arr, fn){
+        var arrRes = [];
+        for (var i = 0; i < arr.length; i++){
+            arrRes.push(fn(arr[i]))
+        }
+        return arrRes;
+    }
+
+    function ageCalc(el){   //callback function
+        return 2016 - el;   // element is mainly just a placeholder. (arr[i] is the one we intended to insert)
+
+    }
+
+    function isFullAge(el){
+        return el >= 18;
+    }
+
+    function maxHeartRate(el){
+        if (el >= 18 && el <= 81){
+            return Math.round(206.9 - (0.67 * el))
+        } else {
+            return -1;
+        }
+        
+    }
+
+    var ages = arrayCalc(years, ageCalc)
+    var matured = arrayCalc(ages, isFullAge)
+    var mhr = arrayCalc(ages, maxHeartRate)
+    console.log(ages)
+    console.log(matured)
+    console.log(mhr)
+
+    </script>
+</body>
+</html>

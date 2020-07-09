@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>GETTING STARTED WITH BRACKETS</h1>
+
+    <h2>This Is Your Guide!</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis molestias, laborum architecto reprehenderit minus sequi a aliquam unde dicta facilis quasi earum ab eum perspiciatis qui saepe quam nam. Obcaecati?</p>
+
+    <script type="text/javascript">
+
+    function game() {
+        var score = Math.random() * 10;
+        console.log(score >= 5);
+        console.log(score)
+    }
+    game();
+    
+    (function() {
+        var score = Math.random() * 10;
+        console.log(score >= 5);
+    })();
+
+    (function(goodLuck) {
+        var score = Math.random() * 10;
+        console.log(score >= 5 - goodLuck);
+    })(5);
+
+
+    </script>
+</body>
+</html>
