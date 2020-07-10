@@ -48,14 +48,20 @@ header{
 }
 
 nav {
+  height: 3rem;
+  width: 100%;
   grid-area: navbar;
-  position: relative;
+  transition: background-color .6s ease 0s;
+  opacity: 95%;
+  position: fixed;
+  z-index: 999;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 #chings-logo {
+  margin-left: 4rem;
   font-size: 1.1rem;
   font-weight: 900;
   color: white;
@@ -81,19 +87,19 @@ li > a {
   text-decoration: none;
   color: #fff;
   font-size: 0.7rem;
+  padding: 5px;
   
 }
 
 li > a:hover{
-  color: #eee;
+  border-bottom: 1px solid #E5B928;
+  font-weight: bold;
 }
 
+
 .socialMedia-container{
+  margin-right: 4rem;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: relative;
-  top: 0.3rem;
 }
 
 .social-logo{
@@ -102,14 +108,9 @@ li > a:hover{
   filter: invert(1.0);
   filter: brightness(100);
   padding: 0 0.6rem;
+  
 }
 
-.linkin-logo{
-  height: 0.7rem;
-  filter: brightness(100);
-  filter: blur(100);
-  padding: 0 0.6rem;
-}
 
 
 
@@ -129,6 +130,8 @@ h1{
 #snow-fall{
   grid-row: 1/-1;
   grid-column: 1/-1;
+  position: relative;
+  z-index: 998;
 }
 
 

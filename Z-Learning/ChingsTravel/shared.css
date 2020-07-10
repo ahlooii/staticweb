@@ -16,41 +16,35 @@
   z-index: 999;
 }
 
-.logo{
-  font-family: 'Playfair Display', serif;
-  word-spacing: 0.1em;
-  color: #fff;
-  font-size: 0.8rem;
-  flex: 3;
-  padding-left: 1rem;
-}
-
-.underline{
-  height: 1px;
-  border: none;
-  background-color: #ccc;
-  width: 7rem;
-  position: relative;
-}
-
-.logo > span {
-  font-family: sans-serif;
-  font-size: 0.5rem;
-  position: relative;
-  top: -0.3rem;
-
-}
-
 nav {
-  flex: 2;
+  height: 3rem;
+  width: 100%;
+  grid-area: navbar;
+  transition: background-color .6s ease 0s;
+  opacity: 95%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#chings-logo {
+  margin-left: 4rem;
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: white;
+}
+
+.spacer{
+  width: 2rem;
 }
 
 ul {
+  flex: 2;
   display: flex;
-  justify-content: space-between;
-  align-content: center;
+  justify-content: space-evenly;
   height: 100%;
-  
 }
 
 li {
@@ -60,29 +54,31 @@ li {
 
 li > a {
   text-decoration: none;
-  color: #eee;
-  font-size: 0.8rem;
-
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 5px;
   
 }
 
 li > a:hover{
-  color: cornflowerblue;
+  border-bottom: 1px solid #E5B928;
+  font-weight: bold;
 }
 
+
 .socialMedia-container{
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  margin-right: 4rem;
 }
 
 .social-logo{
   height: 0.7rem;
   filter: grayscale(1.0);
+  filter: invert(1.0);
   filter: brightness(100);
-  margin-left: 1.5rem;
+  padding: 0 0.6rem;
+
 }
+
 
 
 
