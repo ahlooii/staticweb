@@ -13,7 +13,10 @@
   <body> <!--1st Level Grid-->
       <header> 
         <div class="top-container"> <!--2nd Level Grid-->
+          
           <nav> <!--Adjust with socialMedia-container-->
+            <span id="chings-logo">CHINGS</span>
+            <div class="spacer"></div>
             <ul class="navbar"> 
               <li><a href="#">Home</a></li>
               <li><a href="article.html">Travel</a></li>
@@ -21,13 +24,15 @@
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
+            <div class="spacer"></div>
+            <div class="socialMedia-container"> <!--Adjust with nav-->
+              <img class="social-logo" src="images/facebook.svg" alt="">
+              <img class="social-logo" src="images/Insta.svg" alt="">
+              <img class="social-logo" src="images/Twitter.svg" alt="">
+            </div>    
           </nav>  
            
-          <div class="socialMedia-container"> <!--Adjust with nav-->
-            <img class="social-logo" src="images/facebook.svg" alt="">
-            <img class="social-logo" src="images/Insta.svg" alt="">
-            <img class="social-logo" src="images/Twitter.svg" alt="">
-          </div>    
+          
           <h1 class="fade-in">Ching's Travel Journal</h1>
           <div id="snow-fall"></div>
         </div>
@@ -131,8 +136,12 @@
       <script src="javascript/particles.js"></script>
       <script src="javascript/app.js"></script>
       <script type="text/javascript">
-
-
+      
+      function navAnimate() {
+        if (window.scrollTop > 30){
+          document.querySelector("nav").classlist.add
+        }
+      }
       
       </script>  
   </body>
