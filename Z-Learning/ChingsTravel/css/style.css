@@ -31,7 +31,7 @@ header{
 }
 
 .top-container{
-  background-image: url('images/background.jpg');
+  background-image: url('../images/background.jpg');
   background-repeat: no-repeat;
   background-position: 50% 30%;
   background-size: cover;
@@ -108,10 +108,11 @@ li > a:hover{
   filter: invert(1.0);
   filter: brightness(100);
   padding: 0 0.6rem;
-  
 }
 
-
+.social-logo:hover{
+  filter: brightness(2);
+}
 
 
 h1{
@@ -124,7 +125,10 @@ h1{
   top: 50%;
   transition: transform 4s;
   transform: scale(1.2);
-  
+}
+
+#h1-first_word{
+  font-weight: 900;
 }
 
 #snow-fall{
@@ -217,9 +221,10 @@ section{
 /**New Section**/
 .first-section{
   grid-area: blg-h;
-  background-image: url(images/post1.jpg);
+  background-image: url(../images/post1.jpg);
   background-repeat: no-repeat !important;
   background-position: center center;
+  background-size: cover;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -250,13 +255,17 @@ h2{
 }
 
 .read-btn{
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-weight: 400;
   margin-top: 3rem;
-  width: 70%;
-  height: 1.8rem;
+  width: 75%;
+  height: 1.9rem;
   border: none;
   border-radius: 5px;
+}
+
+.read-btn:hover{
+  opacity: 70%;
 }
 
 
@@ -329,16 +338,16 @@ h2{
 }
 
 #post1{
-  background-image: url('images/latest-post/post1.jpg');
+  background-image: url('../images/latest-post/post1.jpg');
   
 }
 
 #post2{
-  background-image: url('images/latest-post/post2.jpg');
+  background-image: url('../images/latest-post/post2.jpg');
 }
 
 #post3{
-  background-image: url('images/latest-post/post3.jpg');
+  background-image: url('../images/latest-post/post3.jpg');
 }
 
 .gradient{
@@ -361,7 +370,7 @@ h2{
 
 .third-section{
   grid-area: tSec;
-  background-image: url(images/post2.jpg);
+  background-image: url(../images/post2.jpg);
   background-repeat: no-repeat !important;
   background-position: center center;
   background-size: cover;
@@ -410,6 +419,7 @@ footer h4{
 footer nav{
   grid-area: f-content2;
   margin: 0 0 0 4.4rem;
+  position: relative;
 }
 
 footer ul{
