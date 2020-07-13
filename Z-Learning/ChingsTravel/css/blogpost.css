@@ -59,7 +59,6 @@ nav {
     font-size: 1.1rem;
     font-weight: 900;
     color: white;
-    text-decoration: none;
 }
   
 .spacer{
@@ -78,7 +77,7 @@ li {
     align-self: center;
 }
   
-li > a {
+a {
     text-decoration: none;
     color: #fff;
     font-size: 0.7rem;
@@ -179,7 +178,12 @@ section{
 
 .split-gallery li {
     flex:1;
-    border-left:1px solid white;</p>
+    border-left:1px solid white;
+    -webkit-transition:all 0.7s;
+    -moz-transition:all 0.7s;
+    transition:all 0.7s;
+}
+
 .split-gallery:hover li {
     flex:1;  
 }
@@ -193,7 +197,7 @@ figcaption {
     font-size: 0.6rem;
     font-style: italic;
     text-align: center;
-    margin-top: 0.3rem;
+    margin-top: 0.rem;
 }
 
 
