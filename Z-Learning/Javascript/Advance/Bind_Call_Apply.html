@@ -20,7 +20,7 @@
         job: 'teacher',
         presentation: function(style, timeOfday){
             if (style === 'formal'){
-                console.log('Good ' + timeOfday + ', Ladies and gentlement! I\'m ' + this.name + 'I\'m a ' + this.job + 'and I\'m ' + this.age + ' years old.')
+                console.log('Good ' + timeOfday + ', Ladies and gentlement! I\'m ' + this.name + ' I\'m a ' + this.job + 'and I\'m  ' + this.age + ' years old.')
             } else if (style === 'friendly'){
                 console.log('Hey! What\'s up? I\'m ' + this.name + ' and I\'m a ' + this.job + ' and I\'m ' + this.age + ' years old. Have a nice ' + timeOfday + '.' );
             }
@@ -36,6 +36,55 @@
 
    john.presentation('formal', 'morning');
    john.presentation.call(emily,'friendly','evening');
+
+   var johnFriendly = john.presentation.bind(john, 'friendly');
+
+   johnFriendly('morning');
+   johnFriendly('night');
+
+    var emilyFormal = john.presentation.bind(emily, 'formal')
+
+    emilyFormal('teatime!');
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+    var years = [1990, 1965, 1937, 2005, 1998];
+
+    function arrayCalc(arr, fn){
+        var arrRes = []; //Array of Result
+        for (var i = 0; i < arr.length; i++){ 
+            arrRes.push(fn(arr[i]));    // calcAge(arr[i]) - What it does is that it will wrap the array[i] item on that particular loops into different function or "(fn)" you passed to it in later's variable and then it push that result into arrRes. 
+        }
+        return arrRes;
+    }
+
+    function calcAge(el){
+        return 2016 - el;
+    }
+    // CALCULATE WHETHER IS IT FULL AGE
+    function isFullAge(limit, el) {
+        return el >= limit;
+    }
+
+    var ages = arrayCalc(years, calcAge);
+    var fullJapan = arrayCalc(ages,isFullAge.bind(this, 20));
+
+    console.log(ages);
+    console.log(fullJapan);
+
+
+
 
     </script>
 </body>
